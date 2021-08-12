@@ -1,0 +1,167 @@
+C language.
+Oracle                     |                                         Esc->Everybody should be
+Core libraries             |                                                CODING.
+My SQL.                    |--->Written in C.
+Almost every device driver.|
+Web browser.               |
+Unix O.S.                 _|
+
+Computer-Electronic device.
+Takes input and gives output
+Any information can be encoded as sequence of 0 and 1.
+
+Data is a binary sequence which is associated with the values based on 
+positional weights.
+Basic units of measurements-:
+BIT is a unit of information equivalent to the result of a choice b/w only
+two possible alternativesin the binary number system.(0 or 1)
+
+Hardware-->Tangible(Physical)
+Track02.mp3 and DSC1.jpg these are some files which you see generally,
+here .mp3 and .jpg are file extensions and Track02 and DSC1 are file name.
+sum.exe->computer ko kya karna hai ye .exe file me likha hota hai.
+    (.exe)Executable software
+Software-(a)Application  (user ke matlab ka Ex-MS Word)
+         (b)System       (machine le matlab ka hote hai Ex-device driver)
+
+Program-set of indtructions.
+Process-active state of program.(kisi program ko run krte waqt)
+Source code-codes that are written by a programmer.
+Operating system-It provides interface between user and machine.
+                 It does process,mangement,memory etc.
+
+                               Memory unit(MU)            [Jab bhi koi program 
+Hard disk------>>>RAM------>>> Central unit(CU)            start hota hai phle RAM 
+                               Arithmetic logic unit(ALU)  me load hota hai.]
+
+MU-set of registors.
+CU-circuit that reads instructions and decodes it.
+ALU-responsible for all arithmetic and logical unit.
+
+Software devlopment in C-:                                [.exe file O.S dependent hota 
+                                                           hai]
+           sum.c---->[Preprocessor]<-----Header files
+                           |
+isme preprocessor          |
+# se start hone wale       |
+files ko include kr <-----sum.i }<--made by preprocessor
+deta hai without           |                           
+interfering in our         |                           
+code.                      |                          
+                      [Compiler]---->sum.obj---->[Linker]---->sum.exe
+                                               (adds library  (executable file)
+                                                   files)
+Compiler-program that processes statements into machine readable language.
+       
+Header files-It is the file(text) where all the header files with extension .h are mentioned,
+  and it contains the link to libraries.
+Library files-It is the file where the implementation of code of each header is written down 
+ which is mentioned in the header file.It contains all pre defined funtion and methods.
+A  compiler recognizes the standard function used in code via preprocessor that resolves all
+the directives.(directives are the lines in program preceeded by #sign that include)
+
+Identifiers-:
+Constants,variables,keywords.
+Instructions-:
+(1)Data type declaration instruction
+(2)Input/output instruction
+(3)Arithmetic instruction
+(4)Control instruction         {controls the sequence of code execution}
+
+Constant-->Any information
+ |  Data=information=constant(also known as literals)
+ |
+ |-->(1)Priamary                 (2)Secondary
+
+       Integer                     Array
+       Real                        String(It is written b/w " ")
+       Character(Ex-'a',           Pointer
+           single quote            Union   
+            zaroori hai)           Structure
+                                   Enumerator
+Variables-->memory me us jagah ka name jaha hum data rkhenge/rkhte hai,also known as 
+identifiers.Name kbhi bhi number se start nhi hoga and _iske alawa koi bhi symbol use 
+nhi krenge.
+Variables + constant are called operands.
+
+Keywords-->Reserved words
+There are 32 keywords in C.
+auto,break,case,char,continue,do,default,const,double,else,enum,entern,for,if,goto,float,
+long,register,return,signed,static,size of,short,typedef,union,void,while,volatile,unsigned.
+
+Pre-defined functions-These are some stansard functions provided in c libraries to perform basic
+work.Ex-printf(" ")prints something you write b/w " ".
+        scanf(" ",& )stores/assigns the value you give/input
+        getch()waits to get a character
+        clrsc()clears screen
+
+Data type-int,float,double,char etc.
+Comments-Lines which dont compile.
+    // use for single line comment 
+    /*   */use for multiple lines.
+Escape sequence(\n)-Uses for changing line.
+Format specifier-ye apni jagah par variable ka value print ya store krta hai.
+      %d-int
+      %f-float
+      %c-char
+      %lf-double
+; semicolon indicates the end of statements.
+Whenever we declare a variable and dont assign anything to it.It automatically stores
+a garbage value.Ex--int a,b=; so here a will store store a random value/garbage value.
+
+so lets end theory.
+//First program every coder writes(Hello world)
+
+   #include<stdio.h>
+   int main()
+     {
+     printf("Hello World");
+     return 0;
+     }
+
+so let me explain everything happening here #include<stdio.h> is a library file called standard 
+input output in which function like printf,scanf are defined. int main() is also a function in
+which the code is written without it the code will compile but not execute.As we know printf
+prints anything and return 0 basically means that code is compiled successfully.
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
